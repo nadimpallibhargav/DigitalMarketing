@@ -1,0 +1,100 @@
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width: 37.5em) {
+            @content
+        }
+    }
+    @if $breakpoint==tab-port {
+        @media (max-width: 56.25em) {
+            @content
+        }
+    }
+    @if $breakpoint==tab-land {
+        @media (max-width: 75em) {
+            @content
+        }
+    }
+    @if $breakpoint==big-desktop {
+        @media (min-width: 112.5em) {
+            @content
+        }
+    }
+}
+
+@mixin img_properties {
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;    
+} 
+@mixin gradient{
+    background-image:linear-gradient( to right,rgba($color1,1), rgba($color2, .9));
+}
+@mixin navcode{
+    background-color: transparent;
+    margin-top: 4px;
+    
+    .navbar-brand{
+        width: 6.625rem;
+        height: 6.625rem;
+        margin-bottom: 1.5rem;
+        margin-top: 0.5rem;
+        color: #fff !important;
+        h1{
+            font-size: 2rem !important;
+        }
+    }
+    .nav-link{
+        color: #fff !important;
+        font-size: .9rem;
+        transition: all .4s;
+        &:hover{
+            text-shadow: 0 0.8125rem 1.6875rem -0.3125rem rgba(50, 50, 93, 0.25), 0 0.5rem 1rem -0.5rem rgba(0, 0, 0, 0.3), 0 -0.375rem 1rem -0.375rem rgba(0, 0, 0, 0.025);
+            transform: translateY(.6rem);
+        } 
+        // border-bottom: 1px solid $color1;
+        @include respond("phone"){
+           color: #000!important; 
+            border-bottom: 1px solid $color1;  
+        }
+    }
+    .navbar-toggler{
+        color: #fff;
+        @include respond('phone'){
+            margin-right: 1rem;
+        }
+    }
+    // .dropdown{
+       
+    // }
+    .services_dropdown{      
+            border: none !important;
+       .dropdown-item{
+           text-align: left;
+           &:hover{
+               @include gradient;
+               color: #fff;
+           }
+           @include respond("phone"){
+                text-align: center;
+           }
+       }
+    }
+    .show,
+    .collapsing{
+        // margin-right: 1rem;
+        background-color: $color3;
+        text-align: center;
+        color: #fff !important;
+        border-radius: 2px;    
+    }
+   
+   
+   
+}
+// @mixin logo_style{
+//     width: 17.625rem;
+//     height: 2.875rem;
+//     margin-bottom: 1.5rem;
+//     margin-top: 0.5rem;
+// }

@@ -1,0 +1,27 @@
+.section_aboutus{    
+    &_img{
+        background-image:linear-gradient(to right bottom, rgba($color1,0), rgba($color2, .5)),
+        url(../img/home_section_img/about_us.jpg);
+        @include img_properties;
+        @include respond(phone){
+            background-image: none;
+        }
+    }
+    
+    &_text{
+        padding: 2.5rem 8rem 2.5rem 2.5rem;   
+        h2{
+        font-weight: bold;
+        @include respond(phone){
+            text-align: center;
+        }
+        }                 
+        @include respond(phone){
+            padding: 2.5rem;
+            background-image:linear-gradient(to right bottom, rgba($color1,0), rgba($color2, .5)),
+            url(../img/home_section_img/about_us.jpg);
+            @include img_properties;
+            color: white;
+        }
+    }
+}

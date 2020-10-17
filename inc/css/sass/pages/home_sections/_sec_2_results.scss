@@ -1,0 +1,80 @@
+.sec_results{
+    background-color: $color3;
+    padding: 2.5rem 0;
+    .results{
+    text-align: center;
+    margin: auto;
+    margin: 2rem auto;
+    
+    &_box{        
+    transition: all .4s;
+        &:hover{
+            box-shadow: 0 0.8125rem 1.6875rem -0.3125rem rgba(50, 50, 93, 0.25), 0 0.5rem 1rem -0.5rem rgba(0, 0, 0, 0.3), 0 -0.375rem 1rem -0.375rem rgba(0, 0, 0, 0.025);
+            transform: translateY(1rem);
+        }        
+        i{
+            font-size: 3rem;
+            padding: 2.5rem 0;
+        }
+         
+    }
+    
+            
+    p {
+        padding: 0.4rem 0;
+        text-align: justify !important;
+    }
+
+    h5{
+        font: 20px;
+        font-weight: bold;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        text-transform: uppercase;
+        }
+    .results_box{
+        background-color: white;
+        padding: 0 1rem;
+        // border: 1px solid rgba(0, 0, 0, 0.062);
+        border-top: 4px solid $color1;;
+        border-radius: 0.7rem;
+        border-top: 5px solid $color1;        
+        box-shadow: 0 0.8125rem 1.6875rem -0.3125rem rgba(50, 50, 93, 0.25), 0 0.5rem 1rem -0.5rem rgba(0, 0, 0, 0.3), 0 -0.375rem 1rem -0.375rem rgba(0, 0, 0, 0.025);
+        transition: all
+         .4s;
+        transform:translateZ(-1rem);
+        .fas, .far{
+            background-color: $color1;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color:transparent;
+            &:hover{
+                background-color: white !important;
+                color: white;
+            }
+        }       
+        &:hover{
+            box-shadow: 0 0.8125rem 1.6875rem -0.3125rem rgba(50, 50, 93, 0.25), 0 0.5rem 1rem -0.5rem rgba(0, 0, 0, 0.3), 0 -0.375rem 1rem -0.375rem rgba(0, 0, 0, 0.025);
+            transform: translateY(1rem);            
+            color: white;
+            background-color: $color1;
+            border: none;
+            border-top: 5px solid white; 
+            .fas, .far{
+            background-color: white;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color:transparent;
+        } 
+        }
+         @include respond(phone){
+            margin: 1.5rem 0;
+        }       
+    
+    }
+
+}
+}
+
+
+

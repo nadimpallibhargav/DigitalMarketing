@@ -1,0 +1,31 @@
+// Universal Reset
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // Default 1 rem = 16 px 
+    font-size: 1rem; // Making the site broser zoom-in / zoom out adjustable [automatic]
+    // Following we are defining the root font-size for different screen sizes 
+    @include respond(tab-land) {
+        // width: <=1200 px;
+        font-size: 85%;
+    }
+    @include respond(tab-port) {
+        // width: <=900 px
+        font-size: 80%;
+    }
+    @include respond(phone) {
+        // width: <=600 px
+        font-size: 70%;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}

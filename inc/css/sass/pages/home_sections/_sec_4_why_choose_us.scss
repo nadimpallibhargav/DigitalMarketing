@@ -1,0 +1,43 @@
+.why_choose_us{    
+    &_text{
+        padding: 2.5rem 0 2.5rem 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+        margin-bottom: 1rem;        
+        }
+        &_list li .fas{            
+            background: linear-gradient(to right bottom, rgba($color1,1), rgba($color2, .3));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color:transparent;
+        }
+        ul {
+        list-style: none;               
+        }       
+        @include respond(phone){
+            padding: 2.5rem;
+        }
+    }
+
+    &_img{    
+        background-image:linear-gradient(to right bottom, rgba($color1,0), rgba($color2, .5)),
+        url(../img/home_section_img/why_choose_us.jpg);
+        @include img_properties;
+        padding: 6rem;        
+        h2{
+            text-align: center;
+            color: white;
+        }
+        form {               
+        padding: 1.5rem;        
+        input, button, select {
+            border-radius: 20px;
+        }
+        .btn-primary {
+            border-radius: 20px !important;
+        }
+    }
+    }
+}

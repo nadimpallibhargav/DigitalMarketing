@@ -1,0 +1,61 @@
+.contact{
+    // margin: 10rem auto;
+    margin: 12rem auto;
+    padding-bottom: -10rem;
+    hr{
+        margin: 1rem auto;
+        border-top: 1px solid rgba(0,0,0,.1);
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 5rem;
+        font-weight: bold;
+    }
+    h2{
+        margin: 1rem auto;
+        font-weight: bold;
+        @include respond(phone){
+            margin-top: 2rem;
+        }
+    }
+    
+    &_form{
+        padding-left: 3rem;       
+        .input-group{
+        margin-bottom: 1rem;
+        .input-group-text{
+            background-color: $color1 !important;
+            color: white;
+        }
+    }
+    .btn{
+        background-color: $color1;
+        border: none;
+        border-radius: 1.5rem;
+    } 
+    }
+
+    &_text{
+        ul{            
+            list-style-type: none;
+            li a{
+                color: $color1;
+                text-align: start;
+                text-decoration: none;
+            }
+            .fas, .far, .fab{
+                text-align: left;
+                align-items: center;
+                color: $color1;
+                padding-right: 1rem;
+            }
+        }
+        &_contact{
+            li{
+                margin-bottom: 1rem;
+                color: $color1;
+            }
+        }
+    }
+
+}

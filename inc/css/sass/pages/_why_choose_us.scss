@@ -1,0 +1,48 @@
+.why_choose_us_page{    
+    margin: 12rem auto;
+    h2{
+        margin-bottom: 4rem;   
+        text-align: center;     
+        font-weight: bold;
+    }
+    &_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        &_list li .fas{            
+            background: linear-gradient(to right bottom, rgba($color1,1), rgba($color2, .3));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color:transparent;
+            &_text{
+                font-weight: bold;
+            }
+        }
+        ul {
+        list-style: none;               
+        }       
+
+    }
+
+    &_img{    
+        background-image:linear-gradient(to right bottom, rgba($color1,0), rgba($color2, .5)),
+        url(../img/home_section_img/why_choose_us.jpg);
+        @include img_properties;    
+        background-position: left center !important;
+        padding: 3rem;
+        h2{
+            color: white;
+        }
+        form {                       
+        input, button, select {
+            border-radius: 20px;
+        }
+        .btn-primary {
+            border-radius: 20px !important;
+        }
+    }
+    }
+}
+.text_bold{
+    font-weight: bold;
+}

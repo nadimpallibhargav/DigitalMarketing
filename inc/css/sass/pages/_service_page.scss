@@ -1,0 +1,52 @@
+.service_page{
+    padding: 4rem 0;
+    // padding-bottom: 2rem !important;
+    background-color: #fff !important;
+    &__container{
+        padding-top: 5.8rem;
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 1rem 0;
+           
+        }  
+    }
+    &__img{
+        // padding: 5rem 0;
+        margin-top: 4.2rem;
+        img{
+            // height: 35vh;
+            width: 28.75rem !important;
+            height: 17.5625rem !important;
+            border-radius: 2px;
+            -webkit-box-shadow: 1px 1px 2px 2px #999;
+            box-shadow: 1px 1px 2px 2px #999;
+            @include respond('phone') {
+                margin-bottom: 1.5rem;
+                display: block;
+                // margin: 0 auto;
+            }
+        }
+    }
+    &__content{
+        p{
+            padding: 3rem 1rem;
+            text-align: justify;
+        }
+        @include respond('phone') {
+            p{
+                // padding: 1rem 1.5rem;
+            }
+        }
+    }
+}
+.nav_other_pages{
+    @include navcode;
+    @include gradient;
+//    background: $color4;
+   margin: 0;
+//   background-image:linear-gradient( to right,rgba($color1,1), rgba($color2, .9));
+
+
+}

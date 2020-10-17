@@ -1,0 +1,43 @@
+/*  
+    -- Important Points --
+    Here i am using a 7-1 [commanly knows as 7 dawrfs, CSS Architecture for an efficient workflow]
+    Also for adding the styling [css selectors into HTML] i am using BEM (Block element modifier) Notation -- Effecient workflow
+    All the code is written in SASS, then compiled -> prefixed (for browser suppoprt) -> minifiles (faster laoding) down into CSS 
+*/
+
+// @import 'utils/media_query_engine';
+@import 'utils/mixin';
+@import 'utils/base';
+@import 'utils/variables';
+
+// importing Layout
+@import 'layout/navigation';
+@import 'layout/footer';
+
+//importing home_section
+
+// @import 'pages/home_sections/sec_3_aboutus';
+// @import 'pages/home_sections/sec_2_results';
+@import 'pages/home_sections/sec_4_why_choose_us';
+// @import 'pages/home_sections/section_5_service';
+@import 'pages/home_sections/sec_7_faq';
+@import 'pages/home_sections/sec_1_banner';
+@import 'pages/home_sections/sec_2_results';
+@import 'pages/home_sections/sec_3_about_us';
+@import 'pages/home_sections/sec_5_service';
+@import 'pages/contact_us';
+@import 'pages/home_sections/sec_6_footer';
+
+//importing services
+
+
+//importing pages
+@import 'pages/about';
+@import 'pages/faq';
+@import 'pages/why_choose_us';
+@import 'pages/term_condition.scss';
+@import 'pages/privacy.scss';
+
+
+//importing service_page scss
+@import 'pages/service_page';

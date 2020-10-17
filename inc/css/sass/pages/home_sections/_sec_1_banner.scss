@@ -1,0 +1,69 @@
+
+.banner_main{
+  
+    
+    background-image:linear-gradient(to left bottom, rgba($color1,.7), rgba($color2, 1)),
+     url(../img/home_section_img/digital.jpg);
+     background-attachment: fixed;
+     padding: 2.5rem 0;
+    @include img_properties;
+    &__container{
+        padding-top: 9rem;
+        padding-bottom: 4rem;
+        text-align: left;  
+    }
+    &__content{
+        h1{
+            color: #fff;    
+            font-size: 2rem;  
+            font-weight: 600;
+        }
+        p{
+            color: #fff;
+            font-size: 1rem;
+            padding: .5rem 0;
+            font-weight: 500;
+        }
+    }
+    &__button{
+            margin: 0 !important;
+            padding: .5rem 0;
+            a{
+                padding: .7rem 4.5rem;
+                box-sizing: border-box;
+                border-radius: 2rem;
+                // background-color: red;
+                border: 2px solid #fff;
+                color: #fff;
+                display: inline-block;
+                text-decoration: none;
+                transition: all .4s;
+                &:hover{
+                    background-image:linear-gradient(to left bottom, rgba($color1,.9), rgba($color2, 1));
+                }              
+             }
+             .icon{
+                 padding: 0 7px;
+             }
+             .callbtn{
+                 background: transparent;
+                 padding: .7rem 2.5rem;
+                box-sizing: border-box;
+                border-radius: 2rem;
+                border: 2px solid #fff;
+                color: #fff;                
+                outline: none;
+                display: inline-block;
+                text-decoration: none;
+                transition: all .4s;
+                &:hover{
+                    background-image:linear-gradient(to left bottom, rgba($color1,.9), rgba($color2, 1));
+                }                
+             }
+    }
+}
+
+.banner_main_grad{
+    background-image:linear-gradient(to left bottom, rgba($color1,.7), rgba($color2, 1)) !important;
+    transition:all .1s;
+}
