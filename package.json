@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codeofmohit/14_shashank_project.git"
+    "url": "git+https://nadimpallibhargav.github.io/DigitalMarketing/"
   },
   "author": "bhargav",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/codeofmohit/14_shashank_project/issues"
+    "url": "https://nadimpallibhargav.github.io/DigitalMarketing/"
   },
-  "homepage": "https://github.com/codeofmohit/14_shashank_project#readme",
+  "homepage": "https://nadimpallibhargav.github.io/DigitalMarketing/",
   "devDependencies": {
     "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5"
